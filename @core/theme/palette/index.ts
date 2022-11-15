@@ -87,6 +87,19 @@ const DefaultPalette = (mode: PaletteMode, themeColor: ThemeColor) => {
       A400: '#616161',
       A700: '#303030'
     },
+    progress: {
+      below10: '#e6eb9e',
+      below20: '#d4dd5c',
+      below30: '#c0c63b',
+      below40: '#9d992d',
+      below50: '#4664aa',
+      below60: '#5586cf',
+      below70: '#6aa3e2',
+      below80: '#9ec8ef',
+      below90: '#93e6bf',
+      below100: '#13d490',
+      exactly100: '#00966d'
+    },
     text: {
       primary: `rgba(${mainColor}, 0.87)`,
       secondary: `rgba(${mainColor}, 0.68)`,
