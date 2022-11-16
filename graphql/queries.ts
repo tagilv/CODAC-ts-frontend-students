@@ -35,7 +35,9 @@ query getStudents {
   students {
     data {
       attributes {
-        email
+        email,
+        start_date,
+        end_date
       }
     }
   }

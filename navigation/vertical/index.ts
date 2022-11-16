@@ -20,6 +20,11 @@ const navigation = (): VerticalNavItemsType => {
       icon: HomeOutline,
       path: '/dashboard'
     },
+    {
+      title: 'progressbar',
+      icon: HomeOutline,
+      path: '/progressbar'
+    },
     // {
     //   title: 'Account Settings',
     //   icon: AccountCogOutline,
