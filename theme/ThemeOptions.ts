@@ -10,6 +10,7 @@ import spacing from './spacing'
 import shadows from './shadows'
 import breakpoints from './breakpoints'
 import { Settings } from '../contexts/settingsContext'
+import "@fontsource/vt323"
 
 const themeOptions = (settings: Settings): ThemeOptions => {
   // ** Vars
@@ -18,7 +19,17 @@ const themeOptions = (settings: Settings): ThemeOptions => {
   const themeConfig = {
     palette: palette(themeName),
     typography: {
-      fontFamily: [
+      fontFamily: themeName === "gag" 
+      ? [
+        'VT323', 
+        'monospace', 
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"'
+      ].join(',') 
+      : [
         'Inter',
         'sans-serif',
         '-apple-system',
@@ -37,7 +48,7 @@ const themeOptions = (settings: Settings): ThemeOptions => {
     ...spacing,
     breakpoints: breakpoints(),
     shape: {
-      borderRadius: 6
+      borderRadius: themeName === "gag" ? 1 : 6,
     },
     mixins: {
       toolbar: {
