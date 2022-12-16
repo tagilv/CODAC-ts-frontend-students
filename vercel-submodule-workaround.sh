@@ -16,3 +16,4 @@ set -e
 rm -rf content || true # remove the tmp folder if exists
 
 git clone https://$GITHUB_ACCESS_TOKEN@$SUBMODULE_GITHUB
+echo "Content folder cloned"

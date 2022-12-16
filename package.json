@@ -2,7 +2,6 @@
   "name": "codac-ts-frontend-students",
   "version": "0.1.0",
   "private": true,
-  "package-name": "git+https://<GITHUB_ACCESS_TOKEN>:x-oauth-basic@github.com/CodeAcademyBerlin/content.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
