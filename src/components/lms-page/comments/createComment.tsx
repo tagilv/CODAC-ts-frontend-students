@@ -16,17 +16,11 @@ import { toast } from 'react-toastify';
 
 type LMSfeedbackProps = {
   slug: string;
-  id: string;
+  // id: string;
   refetch: () => void;
-  lmsComments: LmsFeedbackEntity;
 };
 
-export default function CreateComment({
-  slug,
-  id,
-  refetch,
-  lmsComments,
-}: LMSfeedbackProps) {
+export default function CreateComment({ slug, refetch }: LMSfeedbackProps) {
   const [message, setMessage] = useState<string>('');
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>): void =>
@@ -72,11 +66,6 @@ export default function CreateComment({
       ({ error: 'e.message' });
     }
   };
-
-  useEffect(() => {
-    refetch();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lmsComments]);
 
   return (
     <Container>
